@@ -71,6 +71,7 @@ def rand():
     sql = SqlManager()
 
     result = sql.get_rand_proxy()
+    print result
     return result[0]
 
 

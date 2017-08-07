@@ -264,4 +264,4 @@ class MySql(SqlBase):
             return None
 
     def get_rand_proxy(self):
-        return self.query('call randRow()')[0]
+        return self.query('call randRow()',True)[0]
