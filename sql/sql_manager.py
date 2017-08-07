@@ -62,3 +62,6 @@ class SqlManager(object):
 
     def commit(self):
         return self.sql.commit()
+
+    def get_rand_proxy(self):
+        return self.sql.get_rand_proxy()

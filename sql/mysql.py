@@ -262,3 +262,6 @@ class MySql(SqlBase):
         except Exception as e:
             logging.debug('mysql execute exception msg:%s' % str(e))
             return None
+
+    def get_rand_proxy(self):
+        return self.query('call randRow()')[0]

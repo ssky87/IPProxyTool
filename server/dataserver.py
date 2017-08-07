@@ -66,6 +66,13 @@ def select():
     } for item in result]
     return json.dumps(data, indent=4)
 
+@app.route('/rand')
+def rand():
+    sql = SqlManager()
+
+    result = sql.get_rand_proxy()
+    return result[0]
+
 
 @app.route('/delete')
 def delete():
